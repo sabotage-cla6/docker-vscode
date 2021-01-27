@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  vscode:
+    image: sabotagecla6/vscode
+    volumes:
+      - $HOME/.Xauthority:/root/.Xauthority
+      - ./code:/tmp/code:rw
+    user: "1000:1000"
+    shm_size: '2G'
+    network_mode: "host"
+    privileged: true
+    environment:
+      USER: sabocla6
+      PASSWD: passwd
+      DISPLAY: $DISPLAY
+    command: code -w /tmp/code

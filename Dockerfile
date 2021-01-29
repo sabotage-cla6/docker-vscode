@@ -14,7 +14,6 @@ RUN chmod u+s /usr/sbin/useradd \
     && chmod u+s /usr/sbin/groupadd \
     && chmod u+s /usr/sbin/chpasswd
 
-COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN echo "ALL ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/ALL
 
 # ***********************************************

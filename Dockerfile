@@ -1,7 +1,7 @@
 FROM sabotagecla6/ubuntu_ui_jp
 
 # ***********************************************
-# install packages for xrdp, and do setting
+# install packages
 # ***********************************************
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \

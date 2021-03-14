@@ -5,7 +5,6 @@ GROUP_ID=$(id -g)
 USER=${USER}
 GROUP=${GROUP:-${USER}}
 PASSWD=${PASSWD}
-NeW_USER=false
 
 # is creating continar ?
 if [ -e /tmp/uninitilze ]; then
